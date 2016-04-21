@@ -1,0 +1,30 @@
+﻿@{
+    ViewBag.Title = "Acerca de";
+}
+
+
+<div class="jumbotron text-center">
+    <img src="~/Content/img/GT-Corp.png" width="600" />
+</div>
+
+
+<h3>@ViewBag.Message</h3>
+
+<address>
+
+    Matamoros 117. Centro<br />
+    Ziracuaretiro, Michoacán<br />
+    <abbr title="Teléfono">Tel:</abbr>
+    (423) 59 30348<br /><br />
+    Horario<br />
+    <strong>Lunes a Viernes: </strong> [09:00 - 14:00] y [17:00 - 21:00]<br />
+    <strong>Domingos: </strong> [10:00 - 14:00] y [17:00 - 20:00]
+
+</address>
+
+<address>
+    <strong>Contacto General:</strong>   <a href="mailto:gt-ziracua@gmail.com">gt-ziracua@gmail.com</a><br />
+
+</address>
+
+<a href='@Url.Action("Index","Home")'>Volver</a>

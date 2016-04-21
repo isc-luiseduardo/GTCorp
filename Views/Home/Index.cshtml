@@ -1,0 +1,81 @@
+﻿@{
+    ViewBag.Title = "Servicios GT";
+}
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+        <li data-target="#myCarousel" data-slide-to="4"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+            <img src="~/Content/Carousel/001.jpg" alt="Cyber-GT">
+        </div>
+
+        <div class="item">
+            <img src="~/Content/Carousel/002.jpg" alt="Cyber-GT">
+        </div>
+
+        <div class="item">
+            <img src="~/Content/Carousel/003.jpg" alt="Cyber-GT">
+        </div>
+
+        <div class="item">
+            <img src="~/Content/Carousel/004.jpg" alt="Cyber-GT">
+        </div>
+        <div class="item">
+            <img src="~/Content/Carousel/005.jpg" alt="Cyber-GT">
+        </div>
+    </div>
+</div>
+
+
+    <div class="jumbotron">
+
+        <p class="text-center"><img src="~/Content/img/GT-Corp.png" /></p>
+
+        @*<p><a href="http://asp.net" class="btn btn-danger btn-lg">Learn more &raquo;</a></p>*@
+    </div>
+
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <h4>Bienvenido. En la parte superior podrás navegar entre los diversos negocios que componen a GT Corp.</h4>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4 text-justify">
+            <h2>Misión</h2>
+            <p>
+                Brindar servicios de calidad e integrales que conjuguen a nuestro entorno social con la tecnología y los beneficios
+                que ésta trae a nuestra vida diaria. Acercando a las personas con nuestros productos y servicios, buscamos el bienestar
+                y el desarrollo bidireccional con nuestra clientela.
+            </p>
+
+        </div>
+        <div class="col-md-4 text-justify">
+            <h2>Visión</h2>
+            <p>
+                Posicionarnos para el año 2020 como una empresa referente en materia tecnológica dentro de nuestras ramificaciones a
+                nivel regional, ofreciendo aún mayor diversidad en servicios y productos, buscando siempre precios justos, calidad y una
+                atención al cliente personalizada.
+            </p>
+
+
+        </div>
+        <div class="col-md-4 text-justify">
+            <h2>Quiénes Somos</h2>
+            <p>
+                GT Corp. es una empresa multiservicios que ofrece soluciones tecnológicas para satisfacer las necesidades de un
+                mercado cada vez más dependiente de la tecnología. Nos componemos por cinco ramos distintos, donde la calidad, atención
+                y eficacia son la prioridad para entregar al cliente un producto o servicio satisfactorio con sus expectativas.
+            </p>
+            <p><a href='@Url.Action("About","Home")' class="btn btn-default btn-lg">Encuéntranos aquí</a></p>
+        </div>
+    </div>

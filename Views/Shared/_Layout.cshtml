@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+
+
+    <meta property="og:url" content="https://www.facebook.com/taller.loto/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="GT-Corp" />
+    <meta property="og:description" content="Servicios tecnológicos en Ziracuaretiro, Michoacán." />
+    <meta property="og:image" content="http://www.your-domain.com/path/image.jpg" />
+
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @*@Html.ActionLink("", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })*@
+                <a href='@Url.Action("Index","Home")' class="pull-left"><img src="~/Content/img/GT-Corp.png" width="100" /></a>
+
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    @*<li>@Html.ActionLink(" Cyber-GT", "Index", "Home", new object { }, new { @class = "cyber glyphicon glyphicon-print"})</li>
+                        <li>@Html.ActionLink(" GT-Design", "About", "Home", new object { }, new { @class = "gtdesign glyphicon glyphicon-gift" })</li>
+                        <li>@Html.ActionLink(" Taller Loto", "Contact", "Home", new object { }, new { @class = "taller glyphicon glyphicon-flash" })</li>
+                        <li>@Html.ActionLink(" Videofilmaciones", "Contact", "Home", new object { }, new { @class = "videofilm glyphicon glyphicon-facetime-video" })</li>
+                        <li>@Html.ActionLink(" Tacita de Café", "Contact", "Home", new object { }, new { @class = "tacita glyphicon glyphicon-shopping-cart" })</li>*@
+                    <li>
+                        <a href='@Url.Action("Index","CyberGT")' class="cyber">
+                            @*<span class="glyphicon glyphicon-print"></span>*@
+                            <img src="~/Content/img/logo_cyber.png" width="35" />
+                            Cyber-gt
+                        </a>
+                    </li>
+                    <li>
+                        <a href='@Url.Action("Index","GTDesign")' class="gtdesign">
+                            @*<span class="glyphicon glyphicon-gift"></span>*@
+                            <img src="~/Content/img/logo_design.png" width="35" />
+                            GT Design
+                        </a>
+                    </li>
+                    <li>
+                        <a href='@Url.Action("Index","TallerLoto")' class="taller">
+                            @*<span class="glyphicon glyphicon-flash"></span>*@
+                            <img src="~/Content/img/mini_loto.png" width="35" />
+                            Taller Loto
+                        </a>
+                    </li>
+                    <li>
+                        <a href='@Url.Action("Index","VideoGeminis")' class="videofilm">
+                            @*<span class="glyphicon glyphicon-facetime-video"></span>*@
+                            <img src="~/Content/img/mini_geminis.png" width="25" />
+                            VideoFilmaciones Géminis
+                        </a>
+                    </li>
+                    <li>
+                        <a href='@Url.Action("Index","TacitaShop")' class="tacita">
+                            @*<span class="glyphicon glyphicon-shopping-cart" ></span>*@
+                            <img src="~/Content/img/mini_tacita.png" width="30" />
+                            La tacita de café
+                        </a>
+                    </li>
+
+                </ul>
+                @Html.Partial("_LoginPartial")
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - Realizado por Luis Eduardo González Téllez & Giovani Daniel De la Cruz Martínez</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

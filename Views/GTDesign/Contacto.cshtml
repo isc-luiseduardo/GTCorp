@@ -1,0 +1,63 @@
+﻿@{
+    ViewBag.Title = "GT Design | Contacto";
+}
+
+<div class="jumbotron text-center">
+
+    <img src="~/Content/img/logo_design.png" class="img-responsive center-block" alt="GT Design" width="400" />
+
+</div>
+
+<div class="row">
+    <div class="col-md-2">
+        <span><a href='@Url.Action("Index","GTDesign")' class="btn btnContactDesign">Inicio</a> </span>
+        <!--<span><a href='@Url.Action("Servicios","GTDesign")' class="btn btn-primary">Servicios</a> </span>-->
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-2">    </div>
+    <div class="col-md-10">
+        <h5>¿Dudas, comentarios, sugerencias o cotizaciones?</h5>
+        <br />Contacta con nosotros y te responderemos a la brevedad posible.
+    </div>
+</div>
+<br />
+
+<div class="row">
+    <div class="col-md-2">    </div>
+    <div class="col-md-4">
+        <form role="form">
+            <div class="form-group">
+                <label for="txtNombre">Tu nombre:</label>
+                <input type="text" id="txtNombre" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label for="txtCorreo">Correo electrónico:</label>
+                <input type="email" id="txtCorreo" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label for="txtNumCel">Núm celular:</label>
+                <input type="tel" id="txtNumCel" class="form-control" />
+                <label for="chckWhats">¿Usas whatsapp?</label>
+                <input type="checkbox" id="chckWhats" />
+            </div>
+            <div class="form-group">
+                <label for="slctMotivo">Motivo:</label>
+                <select class="form-control" id="slctMotivo">
+                    <option>Cotización.</option>
+                    <option>Dudas.</option>
+                    <option>Queja/Sugerencia.</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="txtMsj">Mensaje:</label>
+                <textarea class="form-control" id="txtMsj" rows="8"></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-success">Enviar</button>
+                <button type="reset" class="btn btn-danger">Borrar</button>
+            </div>
+        </form>
+    </div>
+
