@@ -20,6 +20,7 @@
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -258,10 +259,10 @@
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\CyberGT\Index.cshtml" />
-    <Content Include="Views\CyberGT\Servicios.cshtml" />
+    <Content Include="Views\CyberGT\Galeria.cshtml" />
     <Content Include="Views\CyberGT\Contacto.cshtml" />
     <Content Include="Views\GTDesign\Index.cshtml" />
-    <Content Include="Views\GTDesign\Servicios.cshtml" />
+    <Content Include="Views\GTDesign\Galeria.cshtml" />
     <Content Include="Views\GTDesign\Contacto.cshtml" />
     <Content Include="Views\TacitaShop\Index.cshtml" />
     <Content Include="Views\TacitaShop\Contacto.cshtml" />

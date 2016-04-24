@@ -72,3 +72,6 @@ C:\Users\LuisEduardo\Documents\GitHub\GTCorp\GTCorp\bin\es\Microsoft.Owin.Securi
 C:\Users\LuisEduardo\Documents\GitHub\GTCorp\GTCorp\obj\Debug\GTCorp.csprojResolveAssemblyReference.cache
 C:\Users\LuisEduardo\Documents\GitHub\GTCorp\GTCorp\obj\Debug\GTCorp.dll
 C:\Users\LuisEduardo\Documents\GitHub\GTCorp\GTCorp\obj\Debug\GTCorp.pdb
+C:\Users\M-Audio\Documents\GitHub\GTCorp\obj\Debug\GTCorp.csprojResolveAssemblyReference.cache
+C:\Users\M-Audio\Documents\GitHub\GTCorp\obj\Debug\GTCorp.dll
+C:\Users\M-Audio\Documents\GitHub\GTCorp\obj\Debug\GTCorp.pdb

@@ -14,7 +14,7 @@ namespace GTCorp.Controllers
             return View();
         }
 
-        public ActionResult Servicios()
+        public ActionResult Galeria()
         {
             return View();
         }
